@@ -1,0 +1,8 @@
+(version 1)
+
+# USB-C-Buchse P1 (GCT USB4105): Die GND-Pads A1/A12/B1/B12 liegen bauartbedingt
+# nur ca. 0,19 mm neben den NPTH-Führungslöchern. Das ist Teil des Hersteller-
+# Footprints und für die Fertigung (JLCPCB) unkritisch.
+(rule "USB-C P1 Pad-zu-NPTH"
+	(constraint hole_clearance (min 0.15mm))
+	(condition "A.memberOfFootprint('P1') && B.memberOfFootprint('P1')"))
