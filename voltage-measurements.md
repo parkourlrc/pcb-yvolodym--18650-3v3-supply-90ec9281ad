@@ -22,7 +22,7 @@ Alle Spannungen gegen **GND = P−** (Systemmasse hinter dem FS8205A), sofern ni
 ### Schaltung um U1 (laut Netzliste)
 
 - **VCC (Pin 4)** und **CE (Pin 8)** an VBUS → Lader immer aktiv, sobald USB anliegt.
-- **BAT (Pin 5)** am Netz BAT+ – dort hängen auch C2/C4/C6, MT3608 (IN + EN), R4 (DW01A-VCC) und
+- **BAT (Pin 5)** am Netz BAT+ – dort hängen auch C2/C6, MT3608 (IN + EN), R4 (DW01A-VCC) und
   Teiler R8.
 - **GND (Pin 3/EP)** = Systemmasse P−, also **hinter** den Schutz-MOSFETs.
 - Ladestrompfad: TP4056 BAT → SW2 → Zelle → BT− → Q1 (beide FETs) → GND.
@@ -37,23 +37,23 @@ Alle Spannungen gegen **GND = P−** (Systemmasse hinter dem FS8205A), sofern ni
 | 1 TEMP | GND | 0 V (NTC-Überwachung deaktiviert) | |
 | 5 BAT | BAT+ | Zellspannung + ≈ 50 … 100 mV, max. 4,20 V ± 1 % | |
 | 2 PROG | R1 = 1,2 kΩ | 1,0 V bei vollem Ladestrom (CC), ≈ 0,1 V beim Vorladen, in CV fallend gegen 0 V | |
-| 7 CHRG | LED D1 rot | lädt: ≈ 0,1 … 0,3 V (D1 an, ca. 3 mA); voll: hochohmig, D1 aus | |
+| 7 CHRG | LED D1 rot | lädt: ≈ 0,1 … 0,3 V (D1 an, ca. 3 mA); voll: hochohmig, D1 aus (Messgerät zeigt undefinierten Wert von einigen Volt) | |
 | 6 STDBY | LED D2 grün | lädt: hochohmig, D2 aus (Messgerät zeigt undefinierten Wert von einigen Volt); voll: ≈ 0,1 … 0,3 V, D2 an | |
 
 Zusätzlich:
 
 | Messpunkt | Sollwert | Messwert |
 |---|---|---|
-| Zellspannung direkt an BT1 (+ gegen −) | 2,9 … 4,2 V je nach Ladezustand | |
-| Ladestrom aus PROG: I ≈ V_PROG × 1000 mA/V | ≈ 1,0 A in CC (siehe Hinweis unten) | |
+| Zellspannung direkt an BT1 (+ gegen −) | 2,4 … 4,2 V je nach Ladezustand (unter 2,9 V Vorladen) | |
+| Ladestrom aus PROG: I = V_PROG / R1 × 1100 ≈ V_PROG × 917 mA/V | ≈ 0,9 A in CC | |
 
 ### Ladephasen (Pin 5, BAT)
 
-1. **Vorladen** (Zelle < 2,9 V): Strom ≈ 1/10, also ≈ 100 mA; PROG ≈ 0,1 V.
+1. **Vorladen** (Zelle < 2,9 V): Strom ≈ 1/10, also ≈ 90 mA; PROG ≈ 0,1 V.
 2. **Konstantstrom (CC)** (2,9 … 4,2 V): voller Ladestrom, PROG = 1,0 V. BAT steigt mit der Zelle.
-   Pin 5 liegt um I × (Schalter + Q1 + Leiterbahnen) über der echten Zellspannung, bei 1 A etwa
+   Pin 5 liegt um I × (Schalter + Q1 + Leiterbahnen) über der echten Zellspannung, bei 0,9 A etwa
    50–100 mV – die TP4056-Masse liegt hinter den MOSFETs.
-3. **Konstantspannung (CV)**: BAT bleibt bei 4,20 V, der Strom sinkt. Unter ≈ 1/10 Ladestrom →
+3. **Konstantspannung (CV)**: BAT bleibt bei 4,20 V, der Strom sinkt. Unter ≈ 1/10 Ladestrom (≈ 90 mA) →
    grüne LED. Die Zelle endet bei ≈ 4,19 V.
 
 Der DW01A schaltet erst bei 4,3 V wegen Überladung ab und greift beim normalen Laden nicht ein.
@@ -61,15 +61,15 @@ Der DW01A schaltet erst bei 4,3 V wegen Überladung ab und greift beim normalen 
 ### Hinweise
 
 - **Laststrom geht vom Ladestrom ab.** Boost und LDO hängen direkt an BAT+. Zieht der Ausgang
-  dauerhaft mehr als ≈ 100 mA, wird das Ladeende nie erkannt: rote LED bleibt an, BAT bleibt bei 4,2 V.
-- **Wärme:** Bei leerer Zelle verheizt der TP4056 (5 V − 3 V) × 1 A ≈ 2 W. Ab ca. 120 °C regelt er
-  den Strom selbst herunter – PROG unter 1 V ist dann normal.
-- **Ladestrom:** Laut Datenblattformel (I = 1200 V / R_PROG) ergibt R1 = 1,2 kΩ **1,0 A**, nicht
-  0,9 A wie in `README.md` angegeben – gegen Datenblatt prüfen.
+  dauerhaft mehr als ≈ 90 mA, wird das Ladeende nie erkannt: rote LED bleibt an, BAT bleibt bei 4,2 V.
+- **Wärme:** Bei leerer Zelle verheizt der TP4056 (5 V − 3 V) × 0,9 A ≈ 1,8 W. Ab ca. 140 °C Chiptemperatur regelt er
+  den Strom selbst herunter (bei 150 °C auf null) – PROG unter 1 V ist dann normal.
+- **Ladestrom:** Datenblatt (`doc/TP4056.pdf`): I = 1100 V / R_PROG, Tabelle 1,2 kΩ → 900 mA.
 - **Beim Umschalten:** Steckt USB schon, bevor SW2 schließt, liegt BAT+ auf ≈ 4,2 V. Beim Schließen
-  entladen sich C2/C4/C6 kurz in die Zelle (harmlos), danach CC-Phase.
+  entladen sich C2/C6 kurz in die Zelle (harmlos), danach CC-Phase.
 - **Offener Schalter + USB:** Der TP4056 versorgt BAT+ trotzdem – Boost, LDO und die 3,3 V an J1
-  laufen weiter, nur die Zelle ist abgetrennt. Der TP4056 sieht keinen Akku, die LEDs können flackern.
+  laufen weiter, nur die Zelle ist abgetrennt. Der TP4056 sieht keinen Akku: Fällt der Laststrom unter C/10, beendet er
+  die Ladung, BAT+ sinkt unter 4,05 V (Nachladeschwelle) und er startet neu – die LEDs können flackern.
 
 ### Beobachtungen
 

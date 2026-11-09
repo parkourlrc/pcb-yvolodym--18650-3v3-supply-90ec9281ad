@@ -10,7 +10,10 @@ MT3608-Boost auf ~4,0 V, AP2112K-3.3-LDO). Details und Stückliste: `README.md`.
 ## Dateien
 
 - `Akku_3V3_Versorgung.kicad_sch` – Schaltplan (S-Expression, Hauptdatei)
-- `Akku_3V3_Versorgung.kicad_pcb` – Platine, aktuell noch leer
+- `Akku_3V3_Versorgung.kicad_pcb` – Platine (Bauteile platziert, nicht geroutet)
+- `Akku_3V3_Versorgung.kicad_dru` – eigene Design-Regeln für den DRC
+- `voltage-measurements.md` – Soll- und Messwerte der Spannungen
+- `doc/` – Datenblätter der ICs
 - `Akku_3V3_Versorgung.kicad_pro` – Projekteinstellungen
 - `Akku3V3.kicad_sym` – projektlokale Symbolbibliothek
 - `sym-lib-table` – bindet die Bibliothek über `${KIPRJMOD}` ein
@@ -27,6 +30,8 @@ MT3608-Boost auf ~4,0 V, AP2112K-3.3-LDO). Details und Stückliste: `README.md`.
 - Schaltplan-Notizen und Dokumentation auf Deutsch.
 - Bei Wertänderungen (z. B. R6/R7 für Boost-Spannung) die Notiztexte im Schaltplan
   und `README.md` mit anpassen.
+- Dokumentation beschreibt nur den Ist-Zustand: keine historischen Hinweise wie
+  „entfallen“, „früher“, „neu“ oder „noch leer“.
 
 ## Prüfen (falls kicad-cli verfügbar)
 

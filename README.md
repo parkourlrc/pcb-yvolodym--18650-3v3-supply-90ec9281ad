@@ -19,7 +19,7 @@ flowchart LR
    laut Datenblatt-Tabelle; für 1 A: R1 = 1,1 kΩ). CC1/CC2 je 5,1 kΩ (R10/R11) nach GND, damit
    USB-C-Netzteile 5 V liefern.
    LEDs: D1 rot = lädt, D2 grün = voll. TEMP liegt an GND (NTC-Überwachung deaktiviert).
-2. **Akku + Schutz** – 18650-Zelle (BT1) zwischen BAT+ und BAT−, DW01A (U5) + Dual-MOSFET FS8205A (Q1).
+2. **Akku + Schutz** – 18650-Zelle (BT1), Pluspol über Schalter SW2 an BAT+, Minuspol an BAT−; DW01A (U5) + Dual-MOSFET FS8205A (Q1).
    Abschaltung bei Überladung 4,3 V / Tiefentladung 2,4 V / Überstrom.
    Systemmasse GND = P− (hinter dem FS8205A).
 3. **Boost** – MT3608 (U3) mit L1 = 22 µH (≥ 2 A) und Schottky D3 (SS14) auf ca. 4,0 V (Netz `VBOOST`):
@@ -50,7 +50,13 @@ Bei ca. 1,5 V (= 3,0 V Akku) sollte der Verbraucher in den Schlafmodus gehen.
 | L1 | 22 µH / ≥ 2 A |
 | D1, D2 | LED rot / grün |
 | D3 | SS14 Schottky |
-| C1–C8 | 10 µF, 10 µF, 100 nF, 3 × 22 µF, 1 µF, 10 µF |
+| SW2 | Schiebeschalter SPDT (XKB DMx), trennt Zelle (BT1+) von BAT+ |
+| C1, C2 | 10 µF (VBUS bzw. BAT+ am TP4056) |
+| C3 | 100 nF (VCC DW01A) |
+| C5 | 22 µF (VBOOST, Ausgang MT3608) |
+| C6 | 22 µF (BAT+, Eingang MT3608) |
+| C7 | 1 µF (VBOOST, Eingang LDO) |
+| C8 | 10 µF (+3V3, Ausgang LDO) |
 | R1–R11 | 1,2k, 1k, 1k, 100R, 1k, 22k, 3,9k, 100k, 100k, 5,1k, 5,1k |
 | P1 | USB-C-Buchse GCT USB4105 |
 | J1 | JST EH 3-polig |
@@ -61,15 +67,19 @@ Bei ca. 1,5 V (= 3,0 V Akku) sollte der Verbraucher in den Schlafmodus gehen.
 |-------|--------|
 | `Akku_3V3_Versorgung.kicad_pro` | KiCad-Projekt |
 | `Akku_3V3_Versorgung.kicad_sch` | Schaltplan |
-| `Akku_3V3_Versorgung.kicad_pcb` | Platine (noch leer / nicht geroutet) |
+| `Akku_3V3_Versorgung.kicad_pcb` | Platine (Bauteile platziert, nicht geroutet) |
+| `Akku_3V3_Versorgung.kicad_dru` | Eigene Design-Regeln für den DRC |
 | `Akku3V3.kicad_sym` | Projektlokale Symbolbibliothek |
 | `sym-lib-table` | Bindet `Akku3V3` über `${KIPRJMOD}` ein |
+| `voltage-measurements.md` | Soll- und Messwerte der Spannungen |
+| `doc/` | Datenblätter der ICs (TP4056, DW01A, FS8205A, MT3608, AP2112) |
 
 ## Status
 
 - [x] Schaltplan
-- [ ] Footprints zuweisen
-- [ ] PCB-Layout
+- [x] Footprints zuweisen
+- [x] Bauteile platziert
+- [ ] Routing
 - [ ] Fertigungsdaten (Gerber/Bohrdaten werden nicht eingecheckt, siehe `.gitignore`)
 
 ## Lizenz
