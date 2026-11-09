@@ -315,18 +315,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C1849"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ea306123-cfa4-4687-9341-005fadff3b6b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/8a50b3d4-eb56-4682-9d63-94d9bbfff8a0")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -841,18 +829,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C17891"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d6724a71-5fb2-499d-8fc3-437b71c968ab")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/f8eb7864-3d2b-4840-a162-97e71310a922")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -998,18 +974,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C12891"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "e7c4a99f-0f62-4bcc-bf93-4827c80d30f8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/ae22d619-5f5d-4b3a-904d-41b7de01fcf8")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -1152,18 +1116,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C21417"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "17b85695-b320-4047-834f-62082b7292d1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -1575,18 +1527,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C4410"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "5db81de0-21be-49a5-8cb9-55868d2864ee")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/9e6e8913-1a53-478f-8409-371c09a1c46b")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -1729,18 +1669,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C51118"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "44a2825f-bf3c-43ea-a28b-b4b1e33ed568")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -2133,18 +2061,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C50325826"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "791f7071-792a-4023-9e22-01de920a826d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/db13f86b-e69b-4e49-a94b-60b53027ab8d")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -2287,18 +2203,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17883"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c691ca2e-2941-48f9-a6e6-aa9d9a11d0eb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -2447,18 +2351,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C24497"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "9eabcc02-2160-42ff-bfc1-7c1a32218e53")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/234c5fbf-b5c9-4f46-8710-6061e0a0551f")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -2601,18 +2493,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2927799"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "e9f6c275-e814-450a-b3ff-63f0bae4954e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -2970,18 +2850,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C2480"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "f9c0d3c8-d043-4021-8ec8-953394046d5e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/12289406-e981-4203-8090-89ac2c6d6472")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -3257,18 +3125,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C26033"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "3b458f86-e2fd-43fa-8a42-3d970595ee89")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/a135985d-4692-493f-b4b9-4ffbc6a0ab39")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -3414,18 +3270,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C1848"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "0c32b9bd-6592-449e-b5cc-c3636a1b70ca")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/3c688cf9-27c8-43e3-8dc1-dcee30eaacdb")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -3568,18 +3412,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25654"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "32ce5184-0040-4f4d-b307-1a831d343b03")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -4163,18 +3995,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C84817"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "73e558cf-7279-4e40-b212-d0447e5097e8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/f23df893-2233-4a0d-944d-fa0e6a922c72")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -4669,18 +4489,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C17900"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ea7a9648-c46e-49c0-acdc-36237b95582c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/f653312e-4ac8-44a7-9e68-575db0d43998")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -5116,18 +4924,6 @@
 				)
 			)
 		)
-		(property "LCSC" "C13585"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "28c0b692-17dd-4511-bd98-8b10b071ed14")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/2444dc93-3a23-4716-ad2b-85a37dd9c62e")
 		(sheetname "/")
 		(sheetfile "Akku_3V3_Versorgung.kicad_sch")
@@ -5270,18 +5066,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17901"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "1ddc7250-8cab-4df1-b5a5-eb0a0bbbdd0f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -5515,7 +5299,7 @@
 			(remove_unused_layers no)
 			(net "unconnected-(SW2-C-Pad3)")
 			(pinfunction "C_3")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "7d8c8518-5831-48b7-bbce-524636de0c7b")
 		)
 		(embedded_fonts no)

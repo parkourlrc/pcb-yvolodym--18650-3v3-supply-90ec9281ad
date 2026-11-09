@@ -3357,6 +3357,12 @@
 		(uuid "2f2712d7-0216-42b1-a96b-8cf8712f5559")
 	)
 	(junction
+		(at 134.62 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fe69b25-e6e7-40ad-a932-cc40cff14187")
+	)
+	(junction
 		(at 186.69 166.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3405,7 +3411,7 @@
 		(uuid "7c577133-3ce7-4c1b-bef6-d59db7dfdc46")
 	)
 	(junction
-		(at 147.32 46.99)
+		(at 151.13 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7df33372-e724-4ab3-ad74-ff9f0063c9ef")
@@ -3527,6 +3533,10 @@
 	(no_connect
 		(at 49.53 74.93)
 		(uuid "2cdfbc05-46ed-4480-9a94-ec979d24ae3b")
+	)
+	(no_connect
+		(at 39.37 156.21)
+		(uuid "3487f752-9dac-4c89-90c9-517fea0ef9a9")
 	)
 	(no_connect
 		(at 49.53 77.47)
@@ -3838,7 +3848,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 49.53) (xy 147.32 46.99)
+			(xy 151.13 49.53) (xy 151.13 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3848,7 +3858,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 69.85) (xy 147.32 74.93)
+			(xy 151.13 69.85) (xy 151.13 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4018,7 +4028,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 46.99) (xy 157.48 46.99)
+			(xy 82.55 46.99) (xy 161.29 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4138,7 +4148,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 49.53) (xy 157.48 46.99)
+			(xy 161.29 49.53) (xy 161.29 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4338,7 +4348,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 74.93) (xy 147.32 74.93)
+			(xy 116.84 74.93) (xy 151.13 74.93)
 		)
 		(stroke
 			(width 0)
@@ -4398,7 +4408,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 69.85) (xy 157.48 78.74)
+			(xy 161.29 69.85) (xy 161.29 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4478,7 +4488,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 57.15) (xy 157.48 62.23)
+			(xy 161.29 57.15) (xy 161.29 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4528,7 +4538,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 78.74) (xy 157.48 78.74)
+			(xy 114.3 78.74) (xy 161.29 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4668,6 +4678,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 55.88) (xy 139.7 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7c001b4-3988-4513-a373-c87686fcd4be")
+	)
+	(wire
+		(pts
 			(xy 105.41 60.96) (xy 114.3 60.96)
 		)
 		(stroke
@@ -4768,7 +4788,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 57.15) (xy 147.32 62.23)
+			(xy 151.13 57.15) (xy 151.13 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4967,7 +4987,7 @@
 		(uuid "04aedb40-32fd-4562-8b87-7e17dfc9bb78")
 	)
 	(label "LED_G"
-		(at 157.48 59.69 0)
+		(at 161.29 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4997,7 +5017,7 @@
 		(uuid "39e6933d-72b0-47a0-b3ee-3329e6fe943e")
 	)
 	(label "LED_R"
-		(at 147.32 59.69 0)
+		(at 151.13 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5027,7 +5047,7 @@
 		(uuid "86012b49-e14d-4700-89c8-651a18736fe5")
 	)
 	(label "LED_R"
-		(at 147.32 59.69 0)
+		(at 151.13 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5047,7 +5067,7 @@
 		(uuid "9b9d9aed-6c9b-497a-b344-ac7e3b440f31")
 	)
 	(label "LED_G"
-		(at 157.48 59.69 0)
+		(at 161.29 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5067,7 +5087,7 @@
 		(uuid "a1f3545c-1a66-4009-a555-d787367a2fc7")
 	)
 	(label "BAT+"
-		(at 134.62 55.88 0)
+		(at 139.7 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5466,7 +5486,7 @@
 	)
 	(symbol
 		(lib_id "Akku3V3:LED")
-		(at 147.32 66.04 0)
+		(at 151.13 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5476,7 +5496,7 @@
 		(dnp no)
 		(uuid "1c4cc515-a6cd-44f7-b7d7-ee2dd9bfff4b")
 		(property "Reference" "D1"
-			(at 149.86 64.77 0)
+			(at 153.67 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5487,7 +5507,7 @@
 			)
 		)
 		(property "Value" "LED rot (laedt)"
-			(at 141.732 69.088 0)
+			(at 145.542 69.088 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5498,7 +5518,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop"
-			(at 147.32 66.04 0)
+			(at 151.13 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5509,7 +5529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 66.04 0)
+			(at 151.13 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5520,7 +5540,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 66.04 0)
+			(at 151.13 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6084,7 +6104,7 @@
 	)
 	(symbol
 		(lib_id "Akku3V3:R")
-		(at 157.48 53.34 0)
+		(at 161.29 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6094,7 +6114,7 @@
 		(dnp no)
 		(uuid "38adda81-2ecd-4136-890c-c39094e1d68e")
 		(property "Reference" "R3"
-			(at 160.02 52.07 0)
+			(at 163.83 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6105,7 +6125,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 160.02 54.61 0)
+			(at 163.83 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6116,7 +6136,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 157.48 53.34 0)
+			(at 161.29 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6127,7 +6147,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 53.34 0)
+			(at 161.29 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6138,7 +6158,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.48 53.34 0)
+			(at 161.29 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6995,7 +7015,7 @@
 	)
 	(symbol
 		(lib_id "Akku3V3:R")
-		(at 147.32 53.34 0)
+		(at 151.13 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7005,7 +7025,7 @@
 		(dnp no)
 		(uuid "9e6e8913-1a53-478f-8409-371c09a1c46b")
 		(property "Reference" "R2"
-			(at 149.86 52.07 0)
+			(at 153.67 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7016,7 +7036,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 149.86 54.61 0)
+			(at 153.67 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7027,7 +7047,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 147.32 53.34 0)
+			(at 151.13 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7038,7 +7058,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 53.34 0)
+			(at 151.13 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7049,7 +7069,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 53.34 0)
+			(at 151.13 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8309,7 +8329,7 @@
 	)
 	(symbol
 		(lib_id "Akku3V3:LED")
-		(at 157.48 66.04 0)
+		(at 161.29 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8319,7 +8339,7 @@
 		(dnp no)
 		(uuid "f3728a34-b576-4967-9cdc-71e466e25d9d")
 		(property "Reference" "D2"
-			(at 160.02 64.77 0)
+			(at 163.83 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8330,7 +8350,7 @@
 			)
 		)
 		(property "Value" "LED gruen (voll)"
-			(at 159.258 68.834 0)
+			(at 163.068 68.834 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8341,7 +8361,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop"
-			(at 157.48 66.04 0)
+			(at 161.29 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8352,7 +8372,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 66.04 0)
+			(at 161.29 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8363,7 +8383,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.48 66.04 0)
+			(at 161.29 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
